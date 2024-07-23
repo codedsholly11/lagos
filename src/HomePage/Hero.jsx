@@ -21,9 +21,11 @@ const Hero = () => {
             <CiLocationOn />
             <h3>The Zone, Gbagada, Lagos State.</h3>
         </div>
-        <form>
+        <div>
+            <form>
 
-        </form>
+            </form> 
+        </div>
         <div className='flex gap-[30px]'>
             <div className='flex gap-4'>
                 {/* <FaPeopleGroup /> */}

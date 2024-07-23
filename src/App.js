@@ -1,14 +1,20 @@
 import React from 'react'
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Body from './components/Body'
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './HomePage/Home'
+import Insighter from './InsightPage/Insighter'
+import Hack from './HackertoonPage/Hack'
 
 const App = () => {
   return (
     <div>
-    <Nav/>
-    <Hero/>
-    <Body/>
+         <BrowserRouter>
+         <Routes>
+         <Route path="/" element={<Home />}/>
+         <Route path="/Insighter" element={<Insighter />}/>
+         <Route path="/Hack" element={<Hack />}/>
+         </Routes>
+         </BrowserRouter>
     
       
     </div>
