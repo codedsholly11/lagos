@@ -110,6 +110,7 @@ const Insight = () => {
                 </div>
             </div>
         </div>
+        <div></div>
     </div>
   )
 }

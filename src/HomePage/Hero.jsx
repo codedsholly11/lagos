@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { CiLocationOn } from "react-icons/ci";
 // import { FaPeopleGroup } from "react-icons/fa6";
 import attendees from '../images/attendees.svg'
 import speaker from '../images/speakers.svg'
 import sponsor from '../images/sponsor.svg'
+import Countdown from 'react-countdown';
+
 
 const Hero = () => {
+    
+    const[timer, setTimer] = useState("00:00:00")
+
+    useEffect(() => {  
+        setTimer((<Countdown date={Date.now() + 1000000000}/> ));
+    }, []);
+
   return (
     <div className='bg-blue-600 flex flex-col items-center justify-center gap-[30px] py-[30px]'>
         <div className='w-[60vw] items-center flex flex-col gap-[30px]'>
@@ -17,9 +26,11 @@ const Hero = () => {
             <button className='bg-black text-white rounded-lg px-[20px] py-[15] h-[7vh] w-[14vw]'>Register Here</button>
             <button className='border-2 border-white rounded-lg px-[20px] py-[15] h-[7vh] w-[14vw] text-white'>Sponsor's Deck</button>
         </div>
-        <div className='flex gap-3 text-white items-center'>
+        <div className='flex gap-3 text-white flex-col items-center text-2xl'>
             <CiLocationOn />
             <h3>The Zone, Gbagada, Lagos State.</h3>
+            <p>{timer}</p>
+            
         </div>
         <div>
             <form>
