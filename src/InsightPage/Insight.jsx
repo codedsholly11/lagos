@@ -12,29 +12,29 @@ const Insight = () => {
                 <h1 className='text-5xl font-semibold '>Event Overview</h1>
                 <p className='border-b-2'></p>
             </div>
-            <div className='flex gap-[20px]'>
-                <div className='flex gap-[20px] rounded-xl p-[30px] shadow-xl w-[30vw] h-[30vh] bg-blue-400'>
+            <div className='flex gap-[20px] overflow-x-scroll items-center justify-center w-[70%] px-[30px] ml-[200px] pb-[60px]'>
+                <div className='flex gap-[30px] rounded-xl items-center justify-center p-[20px] shadow-xl w-[120%] h-[30vh] bg-blue-400'>
                     <img src={registration} alt="" />
                     <div>
                         <h1 className='text-4xl font-semibold'>369</h1>
                         <p className='text-2xl'>Total Registration</p>
                     </div>
                 </div>
-                <div className='flex gap-[20px] rounded-xl p-[30px] shadow-xl w-[30vw] h-[30vh] bg-blue-400'>
+                <div className='flex gap-[30px] rounded-xl items-center justify-center p-[20px] shadow-xl w-[40%] h-[30vh] bg-blue-400'>
                     <img src={attendance} alt="" />
                     <div>
                         <h1 className='text-4xl font-semibold'>2447</h1>
                         <p className='text-2xl'>Total Attendance</p>
                     </div>
                 </div>
-                <div className='flex gap-[20px] rounded-xl p-[30px] shadow-xl w-[30vw] h-[30vh] bg-blue-400'>
+                <div className='flex gap-[30px] rounded-xl p-[30px] items-center justify-center shadow-xl w-[40%] h-[30vh] bg-blue-400'>
                     <img src={pew} alt="" />
                     <div>
                         <h1 className='text-4xl font-semibold'>18</h1>
                         <p className='text-2xl'>Speakers</p>
                     </div>
                 </div> 
-                <div className='flex gap-[20px] rounded-xl p-[30px] shadow-xl w-[30vw] h-[30vh] bg-blue-400'>
+                <div className='flex gap-[30px] rounded-xl p-[30px] items-center justify-center shadow-xl w-[40%] h-[30vh] bg-blue-400'>
                     <img src={play} alt="" />
                     <div>
                         <h1 className='text-4xl font-semibold'>3,161</h1>
